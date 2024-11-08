@@ -1,0 +1,40 @@
+﻿<!-- IndexViewData.cshtml -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ViewData Calculator</title>
+    <style>
+        .bold {
+            font-weight: 700;
+        }
+
+        calculator p {
+            margin: 0;
+        }
+
+        .line {
+            width: 96%;
+            height: 1px;
+            background-color: gray;
+            opacity: 0.2;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PassUsingViewData</h1>
+    <calculator>
+        <p class="bold">Rand Value First : @ViewData["Num1"]</p>
+        <p class="bold">Rand Value Second : @ViewData["Num2"]</p>
+        <p class="bold">Add :</p>
+        <p>@ViewData["Num1"] + @ViewData["Num2"] = @ViewData["Addition"]</p>
+        <p class="bold">Sub :</p>
+        <p>@ViewData["Num1"] - @ViewData["Num2"] = @ViewData["Subtraction"]</p>
+        <p class="bold">Mult :</p>
+        <p>@ViewData["Num1"] * @ViewData["Num2"] = @ViewData["Multiplication"]</p>
+        <p class="bold">Div :</p>
+        <p>@ViewData["Num1"] / @ViewData["Num2"] = @ViewData["Division"]</p>
+    </calculator>
+    <div class="line"></div>
+</body>
+</html>

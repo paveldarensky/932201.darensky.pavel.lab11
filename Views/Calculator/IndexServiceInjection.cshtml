@@ -1,0 +1,40 @@
+﻿<!-- IndexServiceInjection.cshtml -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Injection Calculator</title>
+    <style>
+        .bold {
+            font-weight: 700;
+        }
+
+        .calc p {
+            margin: 0;
+        }
+
+        .line {
+            width: 96%;
+            height: 1px;
+            background-color: gray;
+            opacity: 0.2;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AccessServiceDirectly</h1>
+    <div class="calc">
+        <p class="bold">Rand Value First : @ViewBag.Num1</p>
+        <p class="bold">Rand Value Second : @ViewBag.Num2</p>
+        <p class="bold">Add :</p>
+        <p>@ViewBag.Num1 + @ViewBag.Num2 = @ViewBag.Addition</p>
+        <p class="bold">Sub :</p>
+        <p>@ViewBag.Num1 - @ViewBag.Num2 = @ViewBag.Subtraction</p>
+        <p class="bold">Mult :</p>
+        <p>@ViewBag.Num1 * @ViewBag.Num2 = @ViewBag.Multiplication</p>
+        <p class="bold">Div :</p>
+        <p>@ViewBag.Num1 / @ViewBag.Num2 = @ViewBag.Division</p>
+    </div>
+    <div class="line"></div>
+</body>
+</html>

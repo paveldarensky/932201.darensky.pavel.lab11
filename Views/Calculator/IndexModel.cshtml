@@ -1,0 +1,41 @@
+﻿<!-- IndexModel.cshtml -->
+@model LW_11_WebApplication.Models.Calculator
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Calculator</title>
+    <style>
+        .bold {
+            font-weight: 700;
+        }
+
+        calculator p {
+            margin: 0;
+        }
+
+        .line {
+            width: 96%;
+            height: 1px;
+            background-color: gray;
+            opacity: 0.2;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PassUsingModel</h1>
+    <calculator>
+        <p class="bold">Rand Value First : @Model.Num1</p>
+        <p class="bold">Rand Value Second : @Model.Num2</p>
+        <p class="bold">Add :</p>
+        <p>@Model.Num1 + @Model.Num2 = @Model.Addition</p>
+        <p class="bold">Sub :</p>
+        <p>@Model.Num1 - @Model.Num2 = @Model.Subtraction</p>
+        <p class="bold">Mult :</p>
+        <p>@Model.Num1 * @Model.Num2 = @Model.Multiplication</p>
+        <p class="bold">Div :</p>
+        <p>@Model.Num1 / @Model.Num2 = @Model.Division</p>
+    </calculator>
+    <div class="line"></div>
+</body>
+</html>
